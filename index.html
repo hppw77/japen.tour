@@ -196,7 +196,7 @@
                             </li>
                             <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
                                 <div>
-                                    <a href="https://kutani-midori.jimdofree.com/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">3. 陶藝晄（陶芸晄）</a>
+                                    <a href="https://kutani-midori.jimdofree.com/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">3. 陶藝翠（陶芸翠）</a>
                                     <p class="text-stone-400 mt-0.5">能美市｜九谷燒作家工房技法示範與實務研修</p>
                                 </div>
                                 <span class="px-1.5 py-0.5 rounded bg-kutani/30 text-red-200 shrink-0">九谷燒</span>
@@ -274,7 +274,18 @@
                 </div>
             </div>
 
-            <!-- Interactive Date Selector Menu (點選日期選單) -->
+            <!-- Schedule Adjustment Notice Banner -->
+            <div class="bg-kutaniLight/70 border border-kutani/30 rounded-2xl p-4 mb-6 flex items-start gap-3">
+                <div class="w-7 h-7 rounded-lg bg-kutani text-white flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    異動
+                </div>
+                <div class="text-xs sm:text-sm text-ink leading-relaxed">
+                    <strong class="text-kutani font-serif">【行程異動公告】6/30（週三）與 7/01（週四）見習日程對調：</strong>
+                    因應日方合作單位「株式會社箔一」於 6/30（週三）進行年度工廠產線設備例行檢修、無法開放見習與研習，並於 7/01（週四）恢復正常運作；經確認東茶屋街與安江金箔工藝館於 6/30 皆正常開放，故將 <strong>Day 11（6/30）與 Day 12（7/01）</strong> 之行程內容對調。
+                </div>
+            </div>
+
+            <!-- Interactive Date Selector Menu -->
             <div class="bg-white rounded-2xl p-3 sm:p-4 border border-stone-200 shadow-xs mb-8">
                 <div class="flex items-center justify-between mb-2.5 px-1">
                     <span class="text-xs font-semibold text-inkMuted flex items-center gap-1.5">
@@ -376,9 +387,9 @@
                     </div>
                     <div class="font-serif text-2xl font-bold text-ink">NT$ 27,017</div>
                     <ul class="text-xs text-stone-600 mt-2 space-y-0.5">
-                        <li>• 臺灣－小松來回經濟艙機票：<strong>NT$ 20,000</strong></li>
-                        <li>• 海外旅平險（200-300萬意外＋醫療）：<strong>NT$ 1,800</strong></li>
-                        <li>• 青年零用金：<strong>NT$ 5,217</strong></li>
+                        <li>‧ 臺灣－小松來回經濟艙機票：<strong>NT$ 20,000</strong></li>
+                        <li>‧ 海外旅平險（200-300萬意外＋醫療）：<strong>NT$ 1,800</strong></li>
+                        <li>‧ 青年零用金：<strong>NT$ 5,217</strong></li>
                     </ul>
                 </div>
             </div>
@@ -424,7 +435,7 @@
                                 <label class="block text-xs font-medium text-inkMuted mb-1">幣別</label>
                                 <select id="exp-currency" class="w-full px-3 py-2 rounded-xl bg-washi border border-stone-200 text-sm font-medium focus:outline-none focus:border-gold">
                                     <option value="TWD">TWD (臺幣)</option>
-                                    <option value="JPY">JPY (日圓 ¥)</option>
+                                    <option value="JPY">JPY (日圓 ￥)</option>
                                 </select>
                             </div>
                             <div class="col-span-2">
@@ -501,7 +512,7 @@
 
     <script>
         // ==========================================
-        // 1. 17-DAY ITINERARY DATA (FROM PDF)
+        // 1. 17-DAY ITINERARY DATA (SWAPPED 6/30 & 7/01)
         // ==========================================
         const itineraryData = [
             {
@@ -566,7 +577,7 @@
                 spots: [
                     { name: "石川縣立九谷燒美術館", query: "石川県九谷焼美術館 加賀市", note: "古九谷與各樣式歷史脈絡專業導覽" },
                     { name: "福島武山工房", query: "福島武山工房 石川県能美市", note: "九谷燒赤繪細描代表工房觀摩與交流" },
-                    { name: "陶藝晄（陶芸晄）", query: "陶芸晄 石川県能美市", note: "九谷燒作家技法示範與工房研修" }
+                    { name: "陶藝翠（陶芸翠）", query: "陶芸翠 石川県能美市", note: "九谷燒作家技法示範與工房研修" }
                 ]
             },
             {
@@ -669,13 +680,15 @@
                 shortDate: "6/30",
                 weekday: "週三",
                 region: "kanazawa",
-                regionLabel: "金澤市（森本）",
-                title: "金箔製造科技與品質管理",
-                theme: "1萬分之1毫米的金箔製造工藝與現代化品管",
-                purpose: "深入金澤金箔龍頭企業「株式會社箔一」，學習極致薄度（1/10,000 mm）的金箔製造工藝流程、現代化品質管理系統及美妝/食品/建築商品化進程。",
-                tags: ["金澤金箔", "工廠研習", "品質管理"],
+                regionLabel: "金澤市（東山）",
+                adjustedNote: "行程對調（原 7/01 行程）：因應株式會社箔一於 6/30 進行年度工廠設備檢修，調整今日改赴正常營業之東茶屋街與安江金箔工藝館進行參訪。",
+                title: "傳統工藝 × 觀光之品牌昇華",
+                theme: "傳統工藝昇華為觀光經濟之品牌設計",
+                purpose: "以保存完好的江戶茶屋建築群「東茶屋街」為模型，考察傳統金箔、漆器與茶道文化如何被轉譯設計為具高度吸引力的商業與觀光體驗內容。",
+                tags: ["工藝觀光", "東茶屋街", "品牌設計", "行程對調"],
                 spots: [
-                    { name: "株式會社箔一 總店（箔一本店 箔巧館）", query: "箔一本店 箔巧館 金沢", note: "金箔製造工廠研習、品管與商品化導覽" }
+                    { name: "東山・東茶屋街區域", query: "ひがし茶屋街 金沢", note: "歷史街區保存與工藝觀光商業模式考察" },
+                    { name: "金澤市立安江金箔工藝館", query: "金沢市立安江金箔工芸館", note: "金箔歷史、工具與傳統製箔技術專題訪問" }
                 ]
             },
             {
@@ -684,14 +697,14 @@
                 shortDate: "7/01",
                 weekday: "週四",
                 region: "kanazawa",
-                regionLabel: "金澤市（東山）",
-                title: "傳統工藝 × 觀光之品牌昇華",
-                theme: "傳統工藝昇華為觀光經濟之品牌設計",
-                purpose: "以保存完好的江戶茶屋建築群「東茶屋街」為模型，考察傳統金箔、漆器與茶道文化如何被轉譯設計為具高度吸引力的商業與觀光體驗內容。",
-                tags: ["工藝觀光", "東茶屋街", "品牌設計"],
+                regionLabel: "金澤市（森本）",
+                adjustedNote: "行程對調（原 6/30 行程）：株式會社箔一工廠年度設備例行檢修完成，7/01 產線恢復正常運作，如期接待工場見習與研習。",
+                title: "金箔製造科技與品質管理",
+                theme: "1萬分之1毫米的金箔製造工藝與現代化品管",
+                purpose: "深入金澤金箔龍頭企業「株式會社箔一」，學習極致薄度（1/10,000 mm）的金箔製造工藝流程、現代化品質管理系統及美妝/食品/建築商品化進程。",
+                tags: ["金澤金箔", "工廠研習", "品質管理", "行程對調"],
                 spots: [
-                    { name: "東山・東茶屋街區域", query: "ひがし茶屋街 金沢", note: "歷史街區保存與工藝觀光商業模式考察" },
-                    { name: "金澤市立安江金箔工藝館", query: "金沢市立安江金箔工芸館", note: "金箔歷史、工具與傳統製箔技術專題訪問" }
+                    { name: "株式會社箔一 總店（箔一本店 箔巧館）", query: "箔一本店 箔巧館 金沢", note: "金箔製造工廠研習、品管與商品化導覽" }
                 ]
             },
             {
@@ -786,10 +799,10 @@
             { id: 'c9', cat: 'workshop', text: '準備生漆過敏防護衣物（輕薄長袖襯衫、袖套，山中漆器實作必備）', checked: false },
             { id: 'c10', cat: 'workshop', text: '攜帶耐髒、便於活動的工房實作服裝與包覆性佳的平底鞋', checked: false },
             { id: 'c11', cat: 'workshop', text: '隨身田野筆記本、速寫本與非水性耐水筆（記錄釉藥配方與工藝細節）', checked: false },
-            { id: 'c12', cat: 'media', text: '相機／手機與高容量記憶卡（注意部分工房商業機密區禁止攝影）', checked: false },
+            { id: 'c12', cat: 'media', text: '相機∕手機與高容量記憶卡（注意部分工房商業機密區禁止攝影）', checked: false },
             { id: 'c13', cat: 'media', text: '筆記型電腦與充電器（用於 D7/D8 期中整理及 D15 簡報與影片剪輯）', checked: false },
             { id: 'c14', cat: 'media', text: '日本雙平腳電源轉接頭、大容量行動電源（需隨身登機）', checked: false },
-            { id: 'c15', cat: 'personal', text: '兌換日幣現金零用金（基準額度 NT$5,217 約合 ¥24,000，建議另備個人備用金）', checked: false },
+            { id: 'c15', cat: 'personal', text: '兌換日幣現金零用金（基準額度 NT$5,217 約合 ￥24,000，建議另備個人備用金）', checked: false },
             { id: 'c16', cat: 'personal', text: '個人常備藥品（腸胃藥、過敏藥、暈車藥）與夏季防曬晴雨兩用傘', checked: false }
         ];
 
@@ -825,14 +838,18 @@
             container.innerHTML = itineraryData.map(item => {
                 const isSelected = selectedDay === item.day;
                 const isDimmed = regionFilter !== 'all' && item.region !== regionFilter;
+                const isAdjusted = Boolean(item.adjustedNote);
                 return `
                     <button onclick="selectDay(${item.day})"
-                        class="flex flex-col items-center justify-center py-2 px-1 rounded-xl border text-center transition-all
+                        class="relative flex flex-col items-center justify-center py-2 px-1 rounded-xl border text-center transition-all
                         ${isSelected
                             ? 'bg-ink text-gold border-ink shadow-sm scale-[1.03]'
                             : isDimmed
                                 ? 'bg-stone-50 text-stone-300 border-stone-100 opacity-60'
-                                : 'bg-washi hover:bg-goldLight/60 text-ink border-stone-200/80'}">
+                                : isAdjusted
+                                    ? 'bg-kutaniLight/60 hover:bg-kutaniLight text-ink border-kutani/40'
+                                    : 'bg-washi hover:bg-goldLight/60 text-ink border-stone-200/80'}">
+                        ${isAdjusted ? `<span class="w-1.5 h-1.5 rounded-full bg-kutani absolute top-1.5 right-1.5" title="行程對調"></span>` : ''}
                         <span class="text-[10px] font-bold tracking-tighter ${isSelected ? 'text-gold' : 'text-inkMuted'}">D${item.day}</span>
                         <span class="text-xs sm:text-sm font-serif font-bold leading-tight">${item.shortDate}</span>
                         <span class="text-[10px] ${isSelected ? 'text-stone-300' : 'text-stone-400'}">${item.weekday}</span>
@@ -885,7 +902,7 @@
                 }).join('');
 
                 return `
-                    <article class="craft-card bg-white rounded-2xl p-5 sm:p-6 border border-stone-200 shadow-2xs">
+                    <article class="craft-card bg-white rounded-2xl p-5 sm:p-6 border ${item.adjustedNote ? 'border-kutani/40 ring-1 ring-kutani/10' : 'border-stone-200'} shadow-2xs">
                         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-stone-100">
                             <div class="flex items-center gap-3">
                                 <div class="px-3 py-1.5 rounded-xl bg-ink text-gold font-serif font-bold text-sm">
@@ -900,9 +917,16 @@
                                 <span class="text-xs px-2.5 py-1 rounded-full border font-medium ${regionBadgeColor}">
                                     📍 ${item.regionLabel}
                                 </span>
-                                ${item.tags.map(t => `<span class="text-[11px] px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">#${t}</span>`).join('')}
+                                ${item.tags.map(t => `<span class="text-[11px] px-2 py-0.5 rounded-md ${t === '行程對調' ? 'bg-kutani text-white font-semibold' : 'bg-stone-100 text-stone-600'}">#${t}</span>`).join('')}
                             </div>
                         </div>
+
+                        ${item.adjustedNote ? `
+                            <div class="mb-3.5 px-3.5 py-2.5 rounded-xl bg-kutaniLight/70 border border-kutani/25 text-xs text-kutani font-medium flex items-start gap-2">
+                                <span class="shrink-0 mt-0.5">🔄</span>
+                                <span>${item.adjustedNote}</span>
+                            </div>
+                        ` : ''}
 
                         <h3 class="font-serif font-bold text-lg sm:text-xl text-ink mb-2">${item.title}</h3>
                         <div class="inline-block px-3 py-1 rounded-lg bg-goldLight/60 text-amber-950 text-xs font-semibold mb-3">
@@ -1132,7 +1156,7 @@
                         <div class="flex items-center gap-3 shrink-0">
                             <div class="text-right">
                                 <div class="font-serif font-bold text-sm text-ink">
-                                    ${item.currency === 'JPY' ? `¥ ${item.amount.toLocaleString()}` : `NT$ ${item.amount.toLocaleString()}`}
+                                    ${item.currency === 'JPY' ? `￥ ${item.amount.toLocaleString()}` : `NT$ ${item.amount.toLocaleString()}`}
                                 </div>
                                 ${item.currency === 'JPY' ? `<div class="text-[11px] text-inkMuted">≈ NT$ ${twdEquivalent.toLocaleString()}</div>` : ''}
                             </div>
