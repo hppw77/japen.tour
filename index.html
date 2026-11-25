@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-2-8 金澤職人夢｜2027 日本石川縣傳統工藝海外見習計畫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        washi: '#F9F6F0',
+                        washiDark: '#EFEAE0',
+                        ink: '#1E1C1A',
+                        inkMuted: '#57534E',
+                        gold: '#C5A059',
+                        goldLight: '#F3EAD8',
+                        kutani: '#A63A32',
+                        kutaniLight: '#F7E7E6',
+                        kaga: '#3B5956',
+                        kagaLight: '#E4ECEB',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Noto Serif TC"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F6F0;
+            color: #1E1C1A;
+            background-image: radial-gradient(#C5A05922 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Custom scrollbar for date strip */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #C5A059, #E2C685, #C5A059) 1;
+        }
+        .craft-card {
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .craft-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -8px rgba(30, 28, 26, 0.08);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold/30 selection:text-ink">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-washi/95 backdrop-blur-md border-b border-stone-200/80 shadow-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#overview" class="flex items-center gap-2.5 group">
+                <div class="w-8 h-8 rounded-lg bg-ink text-gold flex items-center justify-center font-serif font-bold text-sm border border-gold/40 shadow-xs group-hover:bg-kutani group-hover:text-white transition-colors">
+                    金澤
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-base sm:text-lg tracking-wide text-ink block leading-none">M-2-8 金澤職人夢</span>
+                    <span class="text-[11px] text-inkMuted tracking-wider hidden sm:inline-block">青年百億海外圓夢基金計畫・海外翱翔組</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-1 bg-washiDark/70 p-1 rounded-xl border border-stone-200/70">
+                <a href="#overview" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-inkMuted hover:text-ink hover:bg-white/80 transition">計畫總覽</a>
+                <a href="#itinerary" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-inkMuted hover:text-ink hover:bg-white/80 transition">17日見習行程</a>
+                <a href="#checklist" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-inkMuted hover:text-ink hover:bg-white/80 transition flex items-center gap-1.5">
+                    行前準備清單
+                    <span id="nav-check-badge" class="text-[11px] px-1.5 py-0.5 rounded-full bg-kaga text-white font-semibold">0%</span>
+                </a>
+                <a href="#budget" class="px-3.5 py-1.5 rounded-lg text-sm font-medium text-inkMuted hover:text-ink hover:bg-white/80 transition">預算花費紀錄</a>
+            </nav>
+
+            <!-- Quick Mobile Action -->
+            <div class="flex md:hidden items-center gap-2">
+                <a href="#itinerary" class="text-xs font-medium px-2.5 py-1.5 rounded-lg bg-ink text-washi">17日行程</a>
+                <a href="#checklist" class="text-xs font-medium px-2.5 py-1.5 rounded-lg bg-kaga text-white">清單 <span id="mobile-check-badge">0%</span></a>
+                <a href="#budget" class="text-xs font-medium px-2.5 py-1.5 rounded-lg bg-gold text-ink">記帳</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative overflow-hidden pt-10 pb-14 sm:pt-16 sm:pb-20 border-b border-stone-200">
+        <!-- Decorative Kaga / Gold motifs -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-32 -left-24 w-72 h-72 rounded-full bg-kutani/5 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-white border border-gold/40 text-xs font-medium text-ink mb-5 shadow-2xs">
+                <span class="w-2 h-2 rounded-full bg-kutani animate-pulse"></span>
+                <span>教育部青年發展署｜青年百億海外圓夢基金計畫（海外翱翔組）</span>
+                <span class="text-stone-300">|</span>
+                <span class="text-kaga font-semibold">主題類別：(二) 創業育成與產業交流</span>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8">
+                    <h1 class="font-serif text-3xl sm:text-5xl font-bold text-ink tracking-tight leading-tight mb-4">
+                        M-2-8 金澤職人夢<br>
+                        <span class="text-xl sm:text-3xl font-medium text-inkMuted block mt-2">日本石川縣傳統工藝與地方創生海外見習</span>
+                    </h1>
+                    <p class="text-stone-600 text-base sm:text-lg leading-relaxed max-w-2xl mb-6">
+                        深入日本工藝重鎮石川縣（加賀、能美、小松、金澤），走進百年窯元、金箔科技大廠、公設職人育成機構與藝術大學，從技法實作、品牌轉譯到觀光經濟，展開為期 17 日的沉浸式產業見學與臺日青年職人對話。
+                    </p>
+
+                    <!-- Key Info Pills -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                        <div class="bg-white/90 rounded-2xl p-3.5 border border-stone-200/80 shadow-2xs">
+                            <div class="text-xs text-inkMuted mb-1">圓夢期間（含飛行日）</div>
+                            <div class="font-serif font-bold text-sm sm:text-base text-ink">2027/06/20 – 07/06</div>
+                            <div class="text-xs text-kutani font-medium mt-0.5">共計 17 日（民國116年）</div>
+                        </div>
+                        <div class="bg-white/90 rounded-2xl p-3.5 border border-stone-200/80 shadow-2xs">
+                            <div class="text-xs text-inkMuted mb-1">見習地點</div>
+                            <div class="font-serif font-bold text-sm sm:text-base text-ink">日本・石川縣</div>
+                            <div class="text-xs text-kaga font-medium mt-0.5">加賀・能美・小松・金澤</div>
+                        </div>
+                        <div class="bg-white/90 rounded-2xl p-3.5 border border-stone-200/80 shadow-2xs">
+                            <div class="text-xs text-inkMuted mb-1">見習名額與對象</div>
+                            <div class="font-serif font-bold text-sm sm:text-base text-ink">10 名青年</div>
+                            <div class="text-xs text-inkMuted mt-0.5">18–30歲具中華民國國籍</div>
+                        </div>
+                        <div class="bg-white/90 rounded-2xl p-3.5 border border-stone-200/80 shadow-2xs">
+                            <div class="text-xs text-inkMuted mb-1">獎勵金總經費</div>
+                            <div class="font-serif font-bold text-sm sm:text-base text-ink">NT$ 250,000</div>
+                            <div class="text-xs text-gold font-semibold mt-0.5">含自理額度 NT$ 27,017</div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Core Crafts Showcase -->
+                    <div class="bg-white/80 rounded-2xl p-5 border border-stone-200/90">
+                        <div class="flex items-center justify-between mb-3">
+                            <h2 class="font-serif font-bold text-base text-ink flex items-center gap-2">
+                                <span class="w-1.5 h-5 bg-gold rounded-full"></span>
+                                四大核心傳統工藝研習領域
+                            </h2>
+                            <span class="text-xs text-inkMuted">石川縣指定傳統工藝</span>
+                        </div>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                            <div class="p-3 rounded-xl bg-kutaniLight/60 border border-kutani/20">
+                                <div class="font-serif font-bold text-kutani text-sm mb-1">九谷燒 Kutani</div>
+                                <p class="text-xs text-stone-700 leading-relaxed">九谷五彩色彩體系、無鉛和繪具科學、赤繪細描與金彩技法。</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-800/20">
+                                <div class="font-serif font-bold text-amber-900 text-sm mb-1">山中漆器 Yamanaka</div>
+                                <p class="text-xs text-stone-700 leading-relaxed">轆轤車削（ろくろ挽き）木地工藝與蒔繪裝飾系統化研修。</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-goldLight/70 border border-gold/30">
+                                <div class="font-serif font-bold text-amber-800 text-sm mb-1">金澤金箔 Kanazawa</div>
+                                <p class="text-xs text-stone-700 leading-relaxed">一萬分之一毫米延展工藝、現代化品管與觀光商品化轉譯。</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-kagaLight/70 border border-kaga/20">
+                                <div class="font-serif font-bold text-kaga text-sm mb-1">加賀象嵌 Kaga Zogan</div>
+                                <p class="text-xs text-stone-700 leading-relaxed">刀工與鎧甲金具演變而來的精緻金屬鑲嵌與社群傳承系統。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: 7 Host Institutions & Training Info -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="bg-ink text-washi rounded-2xl p-5 shadow-md border border-gold/30">
+                        <h3 class="font-serif font-bold text-base text-gold mb-3 flex items-center justify-between">
+                            <span>七大重點見習機構</span>
+                            <span class="text-[11px] font-sans font-normal text-stone-400">點擊開啟官網 ↗</span>
+                        </h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://www.hakuichi.co.jp/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">1. 株式會社箔一</a>
+                                    <p class="text-stone-400 mt-0.5">金澤市｜金箔製造工序、工廠品管與品牌經營</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-gold/20 text-gold shrink-0">金箔</span>
+                            </li>
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://www.instagram.com/fukushima_buzan_kutani/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">2. 福島武山工房</a>
+                                    <p class="text-stone-400 mt-0.5">能美市｜九谷燒赤繪細描代表工房觀摩與交流</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-kutani/30 text-red-200 shrink-0">九谷燒</span>
+                            </li>
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://kutani-midori.jimdofree.com/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">3. 陶藝晄（陶芸晄）</a>
+                                    <p class="text-stone-400 mt-0.5">能美市｜九谷燒作家工房技法示範與實務研修</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-kutani/30 text-red-200 shrink-0">九谷燒</span>
+                            </li>
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://miyayoshiseitou.jp/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">4. 宮吉製陶（株式会社宮吉製陶）</a>
+                                    <p class="text-stone-400 mt-0.5">小松市｜現代九谷燒窯元營運、製程管理導覽</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-kutani/30 text-red-200 shrink-0">九谷燒</span>
+                            </li>
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://kinzangama.com/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">5. 錦山窯（展示空間「嘸旦-MUTAN-」）</a>
+                                    <p class="text-stone-400 mt-0.5">小松市｜百年金彩技法傳承與頂級空間品牌美學</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-kutani/30 text-red-200 shrink-0">金彩</span>
+                            </li>
+                            <li class="pb-2 border-b border-stone-800 flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://yamanaka696.org/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">6. 石川縣立山中漆器產業技術中心</a>
+                                    <p class="text-stone-400 mt-0.5">加賀市｜轆轤車削、蒔繪與公設職人育成體系</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-amber-700/40 text-amber-200 shrink-0">漆器</span>
+                            </li>
+                            <li class="flex justify-between items-start gap-2">
+                                <div>
+                                    <a href="https://www.soukeikai.or.jp/" target="_blank" rel="noopener" class="font-bold text-white hover:text-gold transition underline decoration-gold/40">7. 宗桂會館（公益財團法人宗桂会）</a>
+                                    <p class="text-stone-400 mt-0.5">金澤市｜加賀象嵌專門美術館導覽與工坊交流</p>
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-kaga/50 text-teal-100 shrink-0">象嵌</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pre-departure Training Notice -->
+                    <div class="bg-white rounded-2xl p-4 border border-stone-200 shadow-2xs text-xs">
+                        <div class="font-serif font-bold text-ink text-sm mb-1.5 flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-kutani" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                            行前培訓與資格提醒
+                        </div>
+                        <p class="text-stone-600 leading-relaxed mb-2">
+                            需具備基礎日語（JLPT N4 / CEFR A2 以上）或英語（CEFR B1）。錄取後出國前兩週內須全程參與 <strong>2 次行前培訓（共 8 小時，臺北實體＋線上同步）</strong>，未參加視同放棄資格。
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 text-[11px]">
+                            <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-700">第1次(D-14)：安全/交通/分組</span>
+                            <span class="px-2 py-0.5 rounded bg-stone-100 text-stone-700">第2次(D-7)：漆液防護/紀錄片企畫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Interactive 17-Day Itinerary -->
+    <section id="itinerary" class="py-12 sm:py-16 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-kutani block mb-1">17-DAY FIELDWORK SCHEDULE</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink">17日海外見習行程表</h2>
+                    <p class="text-sm text-inkMuted mt-1">點選下方日期按鈕可快速檢視單日詳情，所有參訪景點皆附有 Google Maps 導航連結。</p>
+                </div>
+
+                <!-- View Mode & Region Filter Controls -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <div class="inline-flex rounded-xl bg-white p-1 border border-stone-200 shadow-2xs text-xs">
+                        <button onclick="setRegionFilter('all')" id="region-all" class="region-btn px-3 py-1.5 rounded-lg font-medium bg-ink text-washi transition">全部地區 (17日)</button>
+                        <button onclick="setRegionFilter('kaga')" id="region-kaga" class="region-btn px-3 py-1.5 rounded-lg font-medium text-inkMuted hover:text-ink transition">加賀・能美・小松 (D1–D6)</button>
+                        <button onclick="setRegionFilter('kanazawa')" id="region-kanazawa" class="region-btn px-3 py-1.5 rounded-lg font-medium text-inkMuted hover:text-ink transition">金澤市區 (D7–D17)</button>
+                    </div>
+                    <button onclick="showAllDays()" id="btn-show-all" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-gold/20 text-ink border border-gold/50 hover:bg-gold hover:text-ink transition">
+                        展開全部日程
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Date Selector Menu (點選日期選單) -->
+            <div class="bg-white rounded-2xl p-3 sm:p-4 border border-stone-200 shadow-xs mb-8">
+                <div class="flex items-center justify-between mb-2.5 px-1">
+                    <span class="text-xs font-semibold text-inkMuted flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        點選日期快速切換（2027年6月20日 – 7月6日）
+                    </span>
+                    <span id="selected-day-indicator" class="text-xs font-medium text-kutani">目前顯示：全部 17 日行程</span>
+                </div>
+                <div id="date-selector-grid" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-17 gap-1.5">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Itinerary Cards Container -->
+            <div id="itinerary-container" class="space-y-5">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Interactive Pre-Departure Checklist -->
+    <section id="checklist" class="py-12 sm:py-16 border-b border-stone-200 bg-white/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-kaga block mb-1">PRE-DEPARTURE PREPARATION</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink">行前準備清單（可勾選儲存）</h2>
+                    <p class="text-sm text-inkMuted mt-1">依據《M-2-8 金澤職人夢》簡章規範整理，勾選進度將自動儲存於您的瀏覽器中。</p>
+                </div>
+
+                <!-- Overall Progress Box -->
+                <div class="bg-white rounded-2xl p-4 border border-stone-200 shadow-2xs min-w-[260px]">
+                    <div class="flex items-center justify-between text-xs font-semibold mb-1.5">
+                        <span class="text-inkMuted">裝備與文件完成度</span>
+                        <span id="checklist-progress-text" class="text-kaga font-bold text-sm">0 / 0 (0%)</span>
+                    </div>
+                    <div class="w-full h-2.5 bg-stone-100 rounded-full overflow-hidden">
+                        <div id="checklist-progress-bar" class="h-full bg-kaga transition-all duration-300 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Custom Item Form -->
+            <form onsubmit="addChecklistItem(event)" class="bg-white rounded-2xl p-3 sm:p-4 border border-stone-200 shadow-2xs mb-6 flex flex-col sm:flex-row gap-2.5">
+                <select id="new-check-category" class="px-3 py-2 rounded-xl bg-washi border border-stone-200 text-sm text-ink focus:outline-none focus:border-kaga">
+                    <option value="admin">行政與簽證保險</option>
+                    <option value="training">行前培訓與任務</option>
+                    <option value="workshop">工房實作與防護</option>
+                    <option value="media">影像紀錄與發表</option>
+                    <option value="personal">個人生活與現金</option>
+                </select>
+                <input type="text" id="new-check-text" placeholder="新增個人行前準備項目（例如：作品集名片、日文工藝單字卡...）" required class="flex-1 px-3.5 py-2 rounded-xl bg-washi border border-stone-200 text-sm text-ink placeholder:text-stone-400 focus:outline-none focus:border-kaga">
+                <button type="submit" class="px-5 py-2 rounded-xl bg-kaga text-white text-sm font-medium hover:bg-kaga/90 transition shrink-0">
+                    ＋ 新增項目
+                </button>
+            </form>
+
+            <!-- Checklist Categories Grid -->
+            <div id="checklist-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Budget & Expense Tracker -->
+    <section id="budget" class="py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="mb-8">
+                <span class="text-xs font-bold tracking-widest uppercase text-gold block mb-1">GRANT & EXPENSE TRACKER</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink">經費規劃與預算花費紀錄</h2>
+                <p class="text-sm text-inkMuted mt-1">對照教育部青年發展署獎勵金結構（總經費 NT$ 250,000），即時紀錄個人自理項目與日本現地花費。</p>
+            </div>
+
+            <!-- Official Grant Breakdown Cards -->
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-ink text-washi rounded-2xl p-5 border border-gold/40 shadow-sm">
+                    <div class="text-xs text-stone-400 mb-1">本案獎勵金總經費</div>
+                    <div class="font-serif text-2xl sm:text-3xl font-bold text-gold">NT$ 250,000</div>
+                    <p class="text-xs text-stone-300 mt-2 leading-relaxed">
+                        含合作單位統籌辦理項目與青年個人自理項目。須全程參與並完成成果發表，未依規定參與將依比例繳回獎勵金。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-200 shadow-2xs">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-xs font-semibold text-kaga">合作單位統籌支用</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded bg-kagaLight text-kaga font-medium">89.2%</span>
+                    </div>
+                    <div class="font-serif text-2xl font-bold text-ink">NT$ 222,983</div>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                        涵蓋 17 日當地食宿、當地及跨城市交通、美術館與窯元參訪報名費、講師鐘點費、口譯翻譯費、場地設備與業師輔導費。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-gold/50 shadow-2xs">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-xs font-semibold text-kutani">青年自理項目額度</span>
+                        <span class="text-[11px] px-2 py-0.5 rounded bg-kutaniLight text-kutani font-medium">10.8%</span>
+                    </div>
+                    <div class="font-serif text-2xl font-bold text-ink">NT$ 27,017</div>
+                    <ul class="text-xs text-stone-600 mt-2 space-y-0.5">
+                        <li>• 臺灣－小松來回經濟艙機票：<strong>NT$ 20,000</strong></li>
+                        <li>• 海外旅平險（200-300萬意外＋醫療）：<strong>NT$ 1,800</strong></li>
+                        <li>• 青年零用金：<strong>NT$ 5,217</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interactive Expense Logger -->
+            <div class="grid lg:grid-cols-12 gap-6 items-start">
+                <!-- Left: Input Form & Rate Settings -->
+                <div class="lg:col-span-5 bg-white rounded-2xl p-5 border border-stone-200 shadow-xs">
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-stone-100">
+                        <h3 class="font-serif font-bold text-base text-ink">新增花費紀錄</h3>
+                        <div class="flex items-center gap-1.5 text-xs bg-washi px-2.5 py-1 rounded-lg border border-stone-200">
+                            <span class="text-inkMuted">匯率 1 JPY =</span>
+                            <input type="number" id="jpy-rate" step="0.001" value="0.215" onchange="updateRate()" class="w-14 bg-transparent font-semibold text-ink text-right focus:outline-none border-b border-gold">
+                            <span class="text-inkMuted">TWD</span>
+                        </div>
+                    </div>
+
+                    <form onsubmit="addExpense(event)" class="space-y-3.5">
+                        <div>
+                            <label class="block text-xs font-medium text-inkMuted mb-1">項目名稱</label>
+                            <input type="text" id="exp-title" placeholder="例如：九谷燒作品集、東茶屋街金箔體驗、JR車資" required class="w-full px-3.5 py-2 rounded-xl bg-washi border border-stone-200 text-sm focus:outline-none focus:border-gold">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-medium text-inkMuted mb-1">費用類別</label>
+                                <select id="exp-category" class="w-full px-3 py-2 rounded-xl bg-washi border border-stone-200 text-sm focus:outline-none focus:border-gold">
+                                    <option value="機票交通">機票與交通</option>
+                                    <option value="保險行政">保險與行政</option>
+                                    <option value="工藝蒐集">工藝品與書籍蒐集</option>
+                                    <option value="餐飲伴手禮">自由時間餐飲/伴手禮</option>
+                                    <option value="其他雜支">其他雜支</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-inkMuted mb-1">日期</label>
+                                <input type="date" id="exp-date" value="2027-06-20" class="w-full px-3 py-2 rounded-xl bg-washi border border-stone-200 text-sm focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-3">
+                            <div>
+                                <label class="block text-xs font-medium text-inkMuted mb-1">幣別</label>
+                                <select id="exp-currency" class="w-full px-3 py-2 rounded-xl bg-washi border border-stone-200 text-sm font-medium focus:outline-none focus:border-gold">
+                                    <option value="TWD">TWD (臺幣)</option>
+                                    <option value="JPY">JPY (日圓 ¥)</option>
+                                </select>
+                            </div>
+                            <div class="col-span-2">
+                                <label class="block text-xs font-medium text-inkMuted mb-1">金額</label>
+                                <input type="number" id="exp-amount" min="1" step="any" placeholder="輸入金額" required class="w-full px-3.5 py-2 rounded-xl bg-washi border border-stone-200 text-sm focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-2.5 rounded-xl bg-ink text-gold font-semibold text-sm hover:bg-stone-800 transition shadow-xs">
+                            ＋ 記上一筆花費
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Summary Dashboard & Expense List -->
+                <div class="lg:col-span-7 space-y-4">
+                    <!-- Summary Bar -->
+                    <div class="bg-white rounded-2xl p-5 border border-stone-200 shadow-xs">
+                        <div class="grid grid-cols-3 gap-3 mb-4">
+                            <div class="p-3 rounded-xl bg-washi">
+                                <div class="text-xs text-inkMuted">自理額度基準</div>
+                                <div class="font-serif font-bold text-base sm:text-lg text-ink mt-0.5">NT$ 27,017</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-washi">
+                                <div class="text-xs text-inkMuted">目前已支出總計</div>
+                                <div id="total-spent-twd" class="font-serif font-bold text-base sm:text-lg text-kutani mt-0.5">NT$ 0</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-washi">
+                                <div class="text-xs text-inkMuted">自理額度結餘</div>
+                                <div id="remaining-twd" class="font-serif font-bold text-base sm:text-lg text-kaga mt-0.5">NT$ 27,017</div>
+                            </div>
+                        </div>
+
+                        <!-- Visual Ratio Bar -->
+                        <div>
+                            <div class="flex justify-between text-xs text-inkMuted mb-1">
+                                <span>自理額度使用率</span>
+                                <span id="budget-usage-pct" class="font-semibold text-ink">0%</span>
+                            </div>
+                            <div class="w-full h-3 bg-stone-100 rounded-full overflow-hidden flex">
+                                <div id="budget-bar-fill" class="h-full bg-gold transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expense Records Table/List -->
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-xs overflow-hidden">
+                        <div class="px-5 py-3.5 bg-washi/70 border-b border-stone-200 flex items-center justify-between">
+                            <h3 class="font-serif font-bold text-sm text-ink">花費明細列表</h3>
+                            <button onclick="resetDefaultExpenses()" class="text-xs text-inkMuted hover:text-kutani transition">重設預設項目</button>
+                        </div>
+                        <div id="expense-list" class="divide-y divide-stone-100 max-h-[360px] overflow-y-auto">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-stone-400 py-10 border-t border-stone-800 text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+                <div class="font-serif font-bold text-base text-washi mb-1">M-2-8 金澤職人夢｜2027 日本石川縣傳統工藝海外見習計畫</div>
+                <p>參考資料：教育部青年發展署「青年百億海外圓夢基金計畫－海外翱翔組」簡章。</p>
+                <p class="mt-1 text-stone-500">※ 實際行程、參訪機構與培訓場地將視當地狀況與錄取通知做最終調整。</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="#overview" class="hover:text-gold transition">回到頂部 ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ==========================================
+        // 1. 17-DAY ITINERARY DATA (FROM PDF)
+        // ==========================================
+        const itineraryData = [
+            {
+                day: 1,
+                date: "2027/06/20",
+                shortDate: "6/20",
+                weekday: "週日",
+                region: "kaga",
+                regionLabel: "臺灣 → 小松・加賀",
+                title: "啟程：臺灣 → 小松機場 → 移動至加賀地區・飯店入住",
+                theme: "為 17 日石川傳統工藝研修揭開序幕",
+                purpose: "抵達日本石川縣門戶「小松機場」，團隊集合前往加賀地區辦理入住，進行現地環境認識與安全說明。",
+                tags: ["飛行日", "團隊集合", "加賀溫泉鄉"],
+                spots: [
+                    { name: "小松機場 (Komatsu Airport)", query: "小松空港 石川県", note: "抵達石川縣" },
+                    { name: "加賀市 (Kaga City)", query: "石川県加賀市", note: "加賀地區住宿與研習基地" }
+                ]
+            },
+            {
+                day: 2,
+                date: "2027/06/21",
+                shortDate: "6/21",
+                weekday: "週一",
+                region: "kaga",
+                regionLabel: "能美市",
+                title: "九谷燒百年色彩體系專業工藝產業導覽與研究",
+                theme: "九谷五彩之色彩表現與青年獨立支援基礎設施",
+                purpose: "徹底檢證巨匠名品之美學，了解無鉛和繪具之最新科學研究，以及石川縣支援年輕陶藝作家自立之公設育成體系。",
+                tags: ["九谷燒", "五彩美學", "公設育成"],
+                spots: [
+                    { name: "能美市九谷燒美術館・五彩館＆淺藏五十吉紀念館", query: "能美市九谷焼美術館 五彩館", note: "歷代九谷燒名品與巨匠作品見學" },
+                    { name: "石川縣九谷燒技術中心（含技術研修所）", query: "石川県九谷焼技術研修所", note: "無鉛和繪具研發與青年職人培育基地" }
+                ]
+            },
+            {
+                day: 3,
+                date: "2027/06/22",
+                shortDate: "6/22",
+                weekday: "週二",
+                region: "kaga",
+                regionLabel: "小松市",
+                title: "從瓷土到現代窯元：製程管理與手捏陶實務",
+                theme: "於現代窯元學習窯元營運、製程管理與製作實務",
+                purpose: "從九谷燒核心原料「花坂陶石」與瓷土製造基礎出發，親手進行手捏陶體驗，並深入現代窯元了解量產與品質管理邏輯。",
+                tags: ["瓷土原料", "手捏陶實作", "窯元營運"],
+                spots: [
+                    { name: "CERABO KUTANI（九谷陶瓷實驗室）", query: "CERABO KUTANI 小松市", note: "瓷土製造基礎課程與手捏陶體驗研修" },
+                    { name: "宮吉製陶（株式会社宮吉製陶）", query: "株式会社宮吉製陶 石川県小松市", note: "現代九谷燒窯元營運、製程導覽與實務研修" }
+                ]
+            },
+            {
+                day: 4,
+                date: "2027/06/23",
+                shortDate: "6/23",
+                weekday: "週三",
+                region: "kaga",
+                regionLabel: "加賀市・能美市",
+                title: "九谷燒赤繪細描核心實作日",
+                theme: "深入工坊，觀察並體驗赤繪細描等九谷燒代表技法",
+                purpose: "串聯九谷燒歷史起源與現代作家實踐，進入代表性「赤繪細描」工房近距離觀摩極致筆觸，並與當代作家交流。",
+                tags: ["赤繪細描", "工房實作", "作家交流"],
+                spots: [
+                    { name: "石川縣立九谷燒美術館", query: "石川県九谷焼美術館 加賀市", note: "古九谷與各樣式歷史脈絡專業導覽" },
+                    { name: "福島武山工房", query: "福島武山工房 石川県能美市", note: "九谷燒赤繪細描代表工房觀摩與交流" },
+                    { name: "陶藝晄（陶芸晄）", query: "陶芸晄 石川県能美市", note: "九谷燒作家技法示範與工房研修" }
+                ]
+            },
+            {
+                day: 5,
+                date: "2027/06/24",
+                shortDate: "6/24",
+                weekday: "週四",
+                region: "kaga",
+                regionLabel: "加賀市・小松市",
+                title: "再興九谷的瓷窯構造與金彩品牌行銷",
+                theme: "再興九谷之磁器窯構造與極限金彩意匠之品牌經營",
+                purpose: "上午參觀現存最古老之九谷燒登窯遺構；下午於名門錦山窯「嘸旦-MUTAN-」學習傳承 110 餘年之金彩技術與頂級空間美學（工藝行銷）。",
+                tags: ["古登窯遺跡", "極限金彩", "品牌空間美學"],
+                spots: [
+                    { name: "九谷燒窯跡展示館（現存最古老九谷燒登窯）", query: "九谷焼窯跡展示館 加賀市", note: "再興九谷磁器窯構造與歷史背景研習" },
+                    { name: "錦山窯展示空間「嘸旦 -MUTAN-」", query: "錦山窯 嘸旦 小松市", note: "百年金彩技法傳承與當代工藝品牌行銷" }
+                ]
+            },
+            {
+                day: 6,
+                date: "2027/06/25",
+                shortDate: "6/25",
+                weekday: "週五",
+                region: "kaga",
+                regionLabel: "加賀市（山中溫泉）",
+                title: "山中漆器・轆轤車削與蒔繪之系統驗證",
+                theme: "轆轤車削與蒔繪技術之系統驗證與實作",
+                purpose: "終日駐留公設職人育成機構，徹底調查山中漆器引以為傲之「轆轤車削（ろくろ挽き）」與「蒔繪」之指導體系與手冊化機制，並接受實作指導。",
+                tags: ["山中漆器", "轆轤車削", "蒔繪工藝"],
+                spots: [
+                    { name: "石川縣立山中漆器產業技術中心", query: "石川県立山中漆器産業技術センター", note: "木地轆轤車削與漆藝研修機構" }
+                ]
+            },
+            {
+                day: 7,
+                date: "2027/06/26",
+                shortDate: "6/26",
+                weekday: "週六",
+                region: "kanazawa",
+                regionLabel: "加賀 → 金澤市",
+                title: "加賀 → 移動至金澤・飯店辦理入住＆資料整理",
+                theme: "見習基地轉移至工藝文化古都金澤",
+                purpose: "從加賀地區移動至金澤市區辦理入住，彙整前半段九谷燒與山中漆器之田野筆記、影像素材與階段性心得。",
+                tags: ["跨城市移動", "金澤基地", "資料蒐集"],
+                spots: [
+                    { name: "金澤車站（鼓門）", query: "金沢駅", note: "抵達金澤市區並展開後半段都市工藝研習" }
+                ]
+            },
+            {
+                day: 8,
+                date: "2027/06/27",
+                shortDate: "6/27",
+                weekday: "週日",
+                region: "kanazawa",
+                regionLabel: "金澤市",
+                title: "自由時間：金澤市內自主調查・第一週學習整理",
+                theme: "自主田野調查與期中報告・紀錄片初稿整建",
+                purpose: "自由走訪金澤美術館、町家或工藝選物店進行自主調查與身心調整，並完成第一週學習報告及紀錄片初稿。",
+                tags: ["自主調查", "期中整理", "影片初稿"],
+                spots: [
+                    { name: "金澤21世紀美術館（自主調查推薦）", query: "金沢21世紀美術館", note: "當代藝術與傳統工藝跨界展覽觀察" },
+                    { name: "近江町市場（自主調查推薦）", query: "近江町市場 金沢", note: "金澤市民生活與飲食器皿文化觀察" }
+                ]
+            },
+            {
+                day: 9,
+                date: "2027/06/28",
+                shortDate: "6/28",
+                weekday: "週一",
+                region: "kanazawa",
+                regionLabel: "金澤市（兼六園周邊）",
+                title: "傳統工藝 36 業種與現代市場流通",
+                theme: "傳統工藝 36 業種之色彩體系與現代工藝市場調查",
+                purpose: "綜合學習石川・金澤多達 36 種傳統工藝之基礎知識、色彩體系與現代生活工藝市場之通路設計。",
+                tags: ["36業種總覽", "市場流通", "生活工藝"],
+                spots: [
+                    { name: "石川縣立傳統工藝產業館（いしかわ生活工芸ミュージアム）", query: "いしかわ生活工芸ミュージアム", note: "特別講座與石川36種傳統工藝導覽" },
+                    { name: "金澤・Craft 廣坂（クラフト広坂）", query: "クラフト広坂 金沢", note: "稀少傳統工藝選品店與現代市場調查" }
+                ]
+            },
+            {
+                day: 10,
+                date: "2027/06/29",
+                shortDate: "6/29",
+                weekday: "週二",
+                region: "kanazawa",
+                regionLabel: "金澤市（小立野・卯辰山）",
+                title: "高等教育中的技術語言化與公設孵化器",
+                theme: "高等教育中技術之語言化與青年作家育成孵化器",
+                purpose: "參訪金澤美大驗證高度工藝教育制度如何將職人技術「語言化」，並於卯辰山工藝工房研究支援年輕作家獨立之公設育成與地方創生模式。",
+                tags: ["金澤美大", "技術語言化", "公設孵化器"],
+                spots: [
+                    { name: "金澤美術工藝大學（工藝科）", query: "金沢美術工芸大学", note: "工藝科高等教育體系與學生技術交流" },
+                    { name: "金澤卯辰山工藝工房", query: "金沢卯辰山工芸工房", note: "青年工藝作家駐村育成與地方創生研究" }
+                ]
+            },
+            {
+                day: 11,
+                date: "2027/06/30",
+                shortDate: "6/30",
+                weekday: "週三",
+                region: "kanazawa",
+                regionLabel: "金澤市（森本）",
+                title: "金箔製造科技與品質管理",
+                theme: "1萬分之1毫米的金箔製造工藝與現代化品管",
+                purpose: "深入金澤金箔龍頭企業「株式會社箔一」，學習極致薄度（1/10,000 mm）的金箔製造工藝流程、現代化品質管理系統及美妝/食品/建築商品化進程。",
+                tags: ["金澤金箔", "工廠研習", "品質管理"],
+                spots: [
+                    { name: "株式會社箔一 總店（箔一本店 箔巧館）", query: "箔一本店 箔巧館 金沢", note: "金箔製造工廠研習、品管與商品化導覽" }
+                ]
+            },
+            {
+                day: 12,
+                date: "2027/07/01",
+                shortDate: "7/01",
+                weekday: "週四",
+                region: "kanazawa",
+                regionLabel: "金澤市（東山）",
+                title: "傳統工藝 × 觀光之品牌昇華",
+                theme: "傳統工藝昇華為觀光經濟之品牌設計",
+                purpose: "以保存完好的江戶茶屋建築群「東茶屋街」為模型，考察傳統金箔、漆器與茶道文化如何被轉譯設計為具高度吸引力的商業與觀光體驗內容。",
+                tags: ["工藝觀光", "東茶屋街", "品牌設計"],
+                spots: [
+                    { name: "東山・東茶屋街區域", query: "ひがし茶屋街 金沢", note: "歷史街區保存與工藝觀光商業模式考察" },
+                    { name: "金澤市立安江金箔工藝館", query: "金沢市立安江金箔工芸館", note: "金箔歷史、工具與傳統製箔技術專題訪問" }
+                ]
+            },
+            {
+                day: 13,
+                date: "2027/07/02",
+                shortDate: "7/02",
+                weekday: "週五",
+                region: "kanazawa",
+                regionLabel: "金澤市",
+                title: "加賀象嵌的金屬鑲嵌技法與社群傳承",
+                theme: "加賀象嵌之金屬鑲嵌技法與職人間社群傳承",
+                purpose: "調查金澤舉世聞名之金屬加飾技術「加賀象嵌」，透過專門美術館導覽與作家工坊交流，理解精微金屬鑲嵌工藝與職人社群傳承系統。",
+                tags: ["加賀象嵌", "金屬工藝", "社群傳承"],
+                spots: [
+                    { name: "宗桂會館（公益財團法人宗桂会）", query: "公益財団法人宗桂会 金沢", note: "加賀象嵌專門美術館導覽與作家工坊交流" }
+                ]
+            },
+            {
+                day: 14,
+                date: "2027/07/03",
+                shortDate: "7/03",
+                weekday: "週六",
+                region: "kanazawa",
+                regionLabel: "金澤市",
+                title: "自由時間：為 D16 成果發表整理個人資料",
+                theme: "田野素材補遺與成果發表架構籌備",
+                purpose: "針對個人研究主題於金澤市內進行最後階段自主補充調查，篩選訪談紀錄與影像素材，著手編排成果發表簡報。",
+                tags: ["自主調查", "成果籌備", "素材彙整"],
+                spots: [
+                    { name: "長町武家屋敷跡・香林坊周邊（自主調查推薦）", query: "長町武家屋敷跡 金沢", note: "加賀藩武家文化與加賀友禪/象嵌歷史脈絡" }
+                ]
+            },
+            {
+                day: 15,
+                date: "2027/07/04",
+                shortDate: "7/04",
+                weekday: "週日",
+                region: "kanazawa",
+                regionLabel: "金澤市",
+                title: "成果發表準備及業師面談",
+                theme: "彙整發表會簡報資料、提交報告及影片初稿",
+                purpose: "與隨團業師進行一對一深度面談，聚焦15日見習觀察的產業洞察，精修翌日成果發表會簡報與紀錄影片初稿。",
+                tags: ["業師指導", "簡報精修", "初稿提交"],
+                spots: [
+                    { name: "金澤市區研習會議室", query: "金沢市", note: "分組討論、業師面談與發表排練" }
+                ]
+            },
+            {
+                day: 16,
+                date: "2027/07/05",
+                shortDate: "7/05",
+                weekday: "週一",
+                region: "kanazawa",
+                regionLabel: "金澤市",
+                title: "臺日青年職人的現實課題對話 ＋ 成果發表會",
+                theme: "臺日青年職人真實課題對話與 15 日研修成果總括發表",
+                purpose: "以 15 日研修所累積之田野資料為基礎進行全英文/日文輔佐成果發表，並與「石川縣傳統青年會議」在地青年職人展開直面產業現實的深度座談。",
+                tags: ["臺日青年座談", "最終成果發表", "交流高潮"],
+                spots: [
+                    { name: "石川縣金澤市發表會場（與石川縣傳統青年會議交流）", query: "石川県庁 金沢市", note: "臺日青年職人課題座談會與成果發表會" }
+                ]
+            },
+            {
+                day: 17,
+                date: "2027/07/06",
+                shortDate: "7/06",
+                weekday: "週二",
+                region: "kanazawa",
+                regionLabel: "金澤 → 小松 → 臺灣",
+                title: "賦歸：金澤市內 → 移動至小松機場 → 返回臺灣",
+                theme: "滿載工藝洞察與跨國情誼平安返抵臺灣",
+                purpose: "整理行囊前往小松機場搭機返臺，後續依計畫規定完成成果報告繳交與社群推廣任務。",
+                tags: ["賦歸飛行", "圓滿結業"],
+                spots: [
+                    { name: "小松機場 (Komatsu Airport)", query: "小松空港 石川県", note: "搭機返回臺灣" }
+                ]
+            }
+        ];
+
+        // ==========================================
+        // 2. PRE-DEPARTURE CHECKLIST DATA
+        // ==========================================
+        const defaultChecklist = [
+            { id: 'c1', cat: 'admin', text: '確認中華民國護照效期（需超過 2028 年 1 月，六個月以上）', checked: false },
+            { id: 'c2', cat: 'admin', text: '完成日本入境線上申報（Visit Japan Web）與相關簽證確認', checked: false },
+            { id: 'c3', cat: 'admin', text: '投保海外旅平險（200–300萬意外險＋20–50萬海外醫療險，預算 NT$1,800）', checked: false },
+            { id: 'c4', cat: 'admin', text: '確認臺灣－小松來回經濟艙機票與電子機票存檔（預算 NT$20,000）', checked: false },
+            { id: 'c5', cat: 'training', text: '出席第 1 次行前培訓（出國前約 14 日｜安全健康、交通分組、教材導讀）', checked: false },
+            { id: 'c6', cat: 'training', text: '出席第 2 次行前培訓（出國前約 7 日｜工房禮儀、護具與紀錄片企畫）', checked: false },
+            { id: 'c7', cat: 'training', text: '複習工藝專業日文詞彙（JLPT N4 基礎會話與工藝專有名詞）', checked: false },
+            { id: 'c8', cat: 'training', text: '擬定個人紀錄片拍攝企畫書與 D16 成果發表觀察主題', checked: false },
+            { id: 'c9', cat: 'workshop', text: '準備生漆過敏防護衣物（輕薄長袖襯衫、袖套，山中漆器實作必備）', checked: false },
+            { id: 'c10', cat: 'workshop', text: '攜帶耐髒、便於活動的工房實作服裝與包覆性佳的平底鞋', checked: false },
+            { id: 'c11', cat: 'workshop', text: '隨身田野筆記本、速寫本與非水性耐水筆（記錄釉藥配方與工藝細節）', checked: false },
+            { id: 'c12', cat: 'media', text: '相機／手機與高容量記憶卡（注意部分工房商業機密區禁止攝影）', checked: false },
+            { id: 'c13', cat: 'media', text: '筆記型電腦與充電器（用於 D7/D8 期中整理及 D15 簡報與影片剪輯）', checked: false },
+            { id: 'c14', cat: 'media', text: '日本雙平腳電源轉接頭、大容量行動電源（需隨身登機）', checked: false },
+            { id: 'c15', cat: 'personal', text: '兌換日幣現金零用金（基準額度 NT$5,217 約合 ¥24,000，建議另備個人備用金）', checked: false },
+            { id: 'c16', cat: 'personal', text: '個人常備藥品（腸胃藥、過敏藥、暈車藥）與夏季防曬晴雨兩用傘', checked: false }
+        ];
+
+        const categoryMeta = {
+            admin: { title: '行政與簽證保險', badge: 'bg-kutaniLight text-kutani' },
+            training: { title: '行前培訓與任務', badge: 'bg-goldLight text-amber-900' },
+            workshop: { title: '工房實作與防護', badge: 'bg-amber-100 text-amber-900' },
+            media: { title: '影像紀錄與發表', badge: 'bg-kagaLight text-kaga' },
+            personal: { title: '個人生活與現金', badge: 'bg-stone-200 text-stone-800' }
+        };
+
+        // ==========================================
+        // 3. BUDGET & EXPENSE DATA
+        // ==========================================
+        const SELF_BUDGET_LIMIT = 27017;
+        const defaultExpenses = [
+            { id: 'e1', title: '臺灣－小松來回經濟艙機票（自理項目）', category: '機票交通', date: '2027-05-15', currency: 'TWD', amount: 20000 },
+            { id: 'e2', title: '海外旅平險（300萬意外＋50萬醫療）', category: '保險行政', date: '2027-06-05', currency: 'TWD', amount: 1800 }
+        ];
+
+        // State Management
+        let selectedDay = 'all';
+        let regionFilter = 'all';
+        let checklistItems = JSON.parse(localStorage.getItem('kanazawa_checklist_v1')) || defaultChecklist;
+        let expenses = JSON.parse(localStorage.getItem('kanazawa_expenses_v1')) || defaultExpenses;
+        let jpyRate = parseFloat(localStorage.getItem('kanazawa_jpy_rate_v1')) || 0.215;
+
+        // ==========================================
+        // RENDER FUNCTIONS: ITINERARY
+        // ==========================================
+        function renderDateSelector() {
+            const container = document.getElementById('date-selector-grid');
+            container.innerHTML = itineraryData.map(item => {
+                const isSelected = selectedDay === item.day;
+                const isDimmed = regionFilter !== 'all' && item.region !== regionFilter;
+                return `
+                    <button onclick="selectDay(${item.day})"
+                        class="flex flex-col items-center justify-center py-2 px-1 rounded-xl border text-center transition-all
+                        ${isSelected
+                            ? 'bg-ink text-gold border-ink shadow-sm scale-[1.03]'
+                            : isDimmed
+                                ? 'bg-stone-50 text-stone-300 border-stone-100 opacity-60'
+                                : 'bg-washi hover:bg-goldLight/60 text-ink border-stone-200/80'}">
+                        <span class="text-[10px] font-bold tracking-tighter ${isSelected ? 'text-gold' : 'text-inkMuted'}">D${item.day}</span>
+                        <span class="text-xs sm:text-sm font-serif font-bold leading-tight">${item.shortDate}</span>
+                        <span class="text-[10px] ${isSelected ? 'text-stone-300' : 'text-stone-400'}">${item.weekday}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function renderItinerary() {
+            const container = document.getElementById('itinerary-container');
+            const indicator = document.getElementById('selected-day-indicator');
+
+            let filtered = itineraryData;
+            if (selectedDay !== 'all') {
+                filtered = itineraryData.filter(d => d.day === selectedDay);
+                const dObj = filtered[0];
+                indicator.textContent = `目前顯示：Day ${dObj.day}（${dObj.date} ${dObj.weekday}）`;
+            } else if (regionFilter !== 'all') {
+                filtered = itineraryData.filter(d => d.region === regionFilter);
+                indicator.textContent = regionFilter === 'kaga'
+                    ? '目前顯示：加賀・能美・小松地區（Day 1 – Day 6）'
+                    : '目前顯示：金澤市區見習（Day 7 – Day 17）';
+            } else {
+                indicator.textContent = '目前顯示：全部 17 日見習行程';
+            }
+
+            container.innerHTML = filtered.map(item => {
+                const regionBadgeColor = item.region === 'kaga'
+                    ? 'bg-kutaniLight text-kutani border-kutani/20'
+                    : 'bg-kagaLight text-kaga border-kaga/20';
+
+                const spotsHtml = item.spots.map(spot => {
+                    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.query)}`;
+                    return `
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-xl bg-washi/90 border border-stone-200/80">
+                            <div>
+                                <div class="font-bold text-sm text-ink flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    ${spot.name}
+                                </div>
+                                <div class="text-xs text-inkMuted mt-0.5 pl-3">${spot.note}</div>
+                            </div>
+                            <a href="${mapUrl}" target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-ink text-ink hover:text-gold border border-stone-300 text-xs font-medium transition shrink-0 shadow-2xs">
+                                <svg class="w-3.5 h-3.5 text-kutani" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Google Maps 路線
+                            </a>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <article class="craft-card bg-white rounded-2xl p-5 sm:p-6 border border-stone-200 shadow-2xs">
+                        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-stone-100">
+                            <div class="flex items-center gap-3">
+                                <div class="px-3 py-1.5 rounded-xl bg-ink text-gold font-serif font-bold text-sm">
+                                    DAY ${String(item.day).padStart(2, '0')}
+                                </div>
+                                <div>
+                                    <span class="font-serif font-bold text-base sm:text-lg text-ink">${item.date}</span>
+                                    <span class="text-xs text-inkMuted ml-1">（${item.weekday}）</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5">
+                                <span class="text-xs px-2.5 py-1 rounded-full border font-medium ${regionBadgeColor}">
+                                    📍 ${item.regionLabel}
+                                </span>
+                                ${item.tags.map(t => `<span class="text-[11px] px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">#${t}</span>`).join('')}
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif font-bold text-lg sm:text-xl text-ink mb-2">${item.title}</h3>
+                        <div class="inline-block px-3 py-1 rounded-lg bg-goldLight/60 text-amber-950 text-xs font-semibold mb-3">
+                            核心主題：${item.theme}
+                        </div>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-4">
+                            <strong class="text-ink">學習目的：</strong>${item.purpose}
+                        </p>
+
+                        <div class="space-y-2">
+                            <div class="text-xs font-semibold text-inkMuted uppercase tracking-wider">參訪機構與地點導航</div>
+                            ${spotsHtml}
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        function selectDay(day) {
+            selectedDay = day;
+            renderDateSelector();
+            renderItinerary();
+        }
+
+        function showAllDays() {
+            selectedDay = 'all';
+            regionFilter = 'all';
+            updateRegionButtons();
+            renderDateSelector();
+            renderItinerary();
+        }
+
+        function setRegionFilter(region) {
+            selectedDay = 'all';
+            regionFilter = region;
+            updateRegionButtons();
+            renderDateSelector();
+            renderItinerary();
+        }
+
+        function updateRegionButtons() {
+            document.querySelectorAll('.region-btn').forEach(btn => {
+                btn.classList.remove('bg-ink', 'text-washi');
+                btn.classList.add('text-inkMuted');
+            });
+            const active = document.getElementById(`region-${regionFilter}`);
+            if (active) {
+                active.classList.add('bg-ink', 'text-washi');
+                active.classList.remove('text-inkMuted');
+            }
+        }
+
+        // ==========================================
+        // RENDER FUNCTIONS: CHECKLIST
+        // ==========================================
+        function saveChecklist() {
+            localStorage.setItem('kanazawa_checklist_v1', JSON.stringify(checklistItems));
+            renderChecklist();
+        }
+
+        function toggleCheckItem(id) {
+            checklistItems = checklistItems.map(item =>
+                item.id === id ? { ...item, checked: !item.checked } : item
+            );
+            saveChecklist();
+        }
+
+        function deleteCheckItem(id) {
+            checklistItems = checklistItems.filter(item => item.id !== id);
+            saveChecklist();
+        }
+
+        function addChecklistItem(e) {
+            e.preventDefault();
+            const cat = document.getElementById('new-check-category').value;
+            const input = document.getElementById('new-check-text');
+            const text = input.value.trim();
+            if (!text) return;
+
+            checklistItems.push({
+                id: 'custom_' + Date.now(),
+                cat: cat,
+                text: text,
+                checked: false
+            });
+            input.value = '';
+            saveChecklist();
+        }
+
+        function renderChecklist() {
+            const grid = document.getElementById('checklist-grid');
+            const total = checklistItems.length;
+            const done = checklistItems.filter(i => i.checked).length;
+            const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+
+            document.getElementById('checklist-progress-text').textContent = `${done} / ${total} (${pct}%)`;
+            document.getElementById('checklist-progress-bar').style.width = `${pct}%`;
+            document.getElementById('nav-check-badge').textContent = `${pct}%`;
+            document.getElementById('mobile-check-badge').textContent = `${pct}%`;
+
+            grid.innerHTML = Object.keys(categoryMeta).map(catKey => {
+                const meta = categoryMeta[catKey];
+                const items = checklistItems.filter(i => i.cat === catKey);
+                const catDone = items.filter(i => i.checked).length;
+
+                return `
+                    <div class="bg-white rounded-2xl p-5 border border-stone-200 shadow-2xs flex flex-col">
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-stone-100">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg ${meta.badge}">${meta.title}</span>
+                            <span class="text-xs font-semibold text-inkMuted">${catDone}/${items.length}</span>
+                        </div>
+                        <ul class="space-y-2.5 flex-1">
+                            ${items.map(item => `
+                                <li class="flex items-start justify-between gap-2 group">
+                                    <label class="flex items-start gap-2.5 cursor-pointer select-none flex-1">
+                                        <input type="checkbox" ${item.checked ? 'checked' : ''} onchange="toggleCheckItem('${item.id}')"
+                                            class="mt-1 w-4 h-4 rounded border-stone-300 text-kaga focus:ring-kaga cursor-pointer shrink-0">
+                                        <span class="text-xs sm:text-sm leading-relaxed transition ${item.checked ? 'line-through text-stone-400' : 'text-ink'}">
+                                            ${item.text}
+                                        </span>
+                                    </label>
+                                    ${item.id.startsWith('custom_') ? `
+                                        <button onclick="deleteCheckItem('${item.id}')" title="刪除自訂項目" class="text-stone-300 hover:text-kutani text-xs px-1">✕</button>
+                                    ` : ''}
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ==========================================
+        // RENDER FUNCTIONS: BUDGET & EXPENSE TRACKER
+        // ==========================================
+        function saveExpenses() {
+            localStorage.setItem('kanazawa_expenses_v1', JSON.stringify(expenses));
+            renderExpenses();
+        }
+
+        function updateRate() {
+            const val = parseFloat(document.getElementById('jpy-rate').value);
+            if (val > 0) {
+                jpyRate = val;
+                localStorage.setItem('kanazawa_jpy_rate_v1', jpyRate);
+                renderExpenses();
+            }
+        }
+
+        function addExpense(e) {
+            e.preventDefault();
+            const title = document.getElementById('exp-title').value.trim();
+            const category = document.getElementById('exp-category').value;
+            const date = document.getElementById('exp-date').value;
+            const currency = document.getElementById('exp-currency').value;
+            const amount = parseFloat(document.getElementById('exp-amount').value);
+
+            if (!title || isNaN(amount) || amount <= 0) return;
+
+            expenses.unshift({
+                id: 'exp_' + Date.now(),
+                title,
+                category,
+                date,
+                currency,
+                amount
+            });
+
+            document.getElementById('exp-title').value = '';
+            document.getElementById('exp-amount').value = '';
+            saveExpenses();
+        }
+
+        function deleteExpense(id) {
+            expenses = expenses.filter(e => e.id !== id);
+            saveExpenses();
+        }
+
+        function resetDefaultExpenses() {
+            expenses = [...defaultExpenses];
+            saveExpenses();
+        }
+
+        function renderExpenses() {
+            document.getElementById('jpy-rate').value = jpyRate;
+            const listEl = document.getElementById('expense-list');
+
+            let totalTwd = 0;
+            expenses.forEach(item => {
+                const twdVal = item.currency === 'JPY' ? item.amount * jpyRate : item.amount;
+                totalTwd += twdVal;
+            });
+
+            totalTwd = Math.round(totalTwd);
+            const remaining = SELF_BUDGET_LIMIT - totalTwd;
+            const pct = Math.min(100, Math.round((totalTwd / SELF_BUDGET_LIMIT) * 100));
+
+            document.getElementById('total-spent-twd').textContent = `NT$ ${totalTwd.toLocaleString()}`;
+            const remEl = document.getElementById('remaining-twd');
+            remEl.textContent = `NT$ ${remaining.toLocaleString()}`;
+            remEl.className = `font-serif font-bold text-base sm:text-lg mt-0.5 ${remaining < 0 ? 'text-kutani' : 'text-kaga'}`;
+
+            document.getElementById('budget-usage-pct').textContent = `${Math.round((totalTwd / SELF_BUDGET_LIMIT) * 100)}%`;
+            const barEl = document.getElementById('budget-bar-fill');
+            barEl.style.width = `${pct}%`;
+            barEl.className = `h-full transition-all duration-300 ${remaining < 0 ? 'bg-kutani' : 'bg-gold'}`;
+
+            if (expenses.length === 0) {
+                listEl.innerHTML = `<div class="p-8 text-center text-xs text-inkMuted">尚無花費紀錄，請從左側表單新增。</div>`;
+                return;
+            }
+
+            listEl.innerHTML = expenses.map(item => {
+                const twdEquivalent = item.currency === 'JPY'
+                    ? Math.round(item.amount * jpyRate)
+                    : item.amount;
+
+                return `
+                    <div class="px-5 py-3.5 flex items-center justify-between gap-3 hover:bg-washi/50 transition">
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2">
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-stone-100 text-stone-700 font-medium shrink-0">${item.category}</span>
+                                <span class="font-medium text-sm text-ink truncate">${item.title}</span>
+                            </div>
+                            <div class="text-xs text-inkMuted mt-0.5">${item.date}</div>
+                        </div>
+                        <div class="flex items-center gap-3 shrink-0">
+                            <div class="text-right">
+                                <div class="font-serif font-bold text-sm text-ink">
+                                    ${item.currency === 'JPY' ? `¥ ${item.amount.toLocaleString()}` : `NT$ ${item.amount.toLocaleString()}`}
+                                </div>
+                                ${item.currency === 'JPY' ? `<div class="text-[11px] text-inkMuted">≈ NT$ ${twdEquivalent.toLocaleString()}</div>` : ''}
+                            </div>
+                            <button onclick="deleteExpense('${item.id}')" title="刪除紀錄" class="text-stone-300 hover:text-kutani p-1 transition">
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Initialize App on Window Load
+        window.onload = function () {
+            renderDateSelector();
+            renderItinerary();
+            renderChecklist();
+            renderExpenses();
+        };
+    </script>
+</body>
+</html>
